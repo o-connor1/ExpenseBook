@@ -15,7 +15,7 @@ const sendEmail = async (options) => {
   //   service: "gmail",
   //   auth: {
   //     user: "aryan_g@mt.iitr.ac.in",
-  //     pass: "Aryan$652",
+  //     pass: "pass123",
   //   },
   // });
 
