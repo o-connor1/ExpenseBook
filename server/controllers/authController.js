@@ -13,6 +13,10 @@ const signToken = (id) => {
 exports.signup = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
+    const user = await User.findOne({ email: email });
+  if (user) {
+    return next(new AppError("User already exists!", 401));
+  }
     const newUser = await User.create({ name, email, password });
     const token = signToken(newUser._id);
     const options = {
