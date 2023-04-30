@@ -44,10 +44,6 @@ function LogInForm() {
     }
   };
 
-  const handleForgotPassword=()=>{
-    console.log("he");
-  }
-
   return (
     <div className="form">
       <h1 className="title">LOGIN</h1>
