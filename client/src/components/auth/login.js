@@ -80,9 +80,6 @@ function LogInForm() {
         <button onClick={() => handleSubmit()} type="submit" class="btn">
           LOGIN
         </button>
-        <button onClick={() => handleForgotPassword()} type="submit" class="forgetbtn">
-          Forgot your Password?
-        </button>
       </div>
     </div>
   );
